@@ -78,7 +78,7 @@ const CONFIG = {
 };
 
 // === 텍스트 오버레이 표시/숨김 ===
-function showTextOverlay(show = true) {
+function showTextOverlay(show = false) {
   if (show) {
     if (!textOverlay.querySelector('img')) {
       const img = document.createElement('img');
@@ -94,7 +94,7 @@ function showTextOverlay(show = true) {
 }
 
 // === 시간 오버레이 표시/숨김 ===
-function showTimeOverlay(show = true) {
+function showTimeOverlay(show = false) {
   if (show) {
     timeOverlay.classList.add('show');
   } else {
