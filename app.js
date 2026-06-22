@@ -1,6 +1,5 @@
 // === 요소 선택 ===
 const videoPlayer = document.getElementById('videoPlayer');
-const textOverlay = document.getElementById('textOverlay');
 const timeOverlay = document.getElementById('timeOverlay');
 const timeDisplay = document.getElementById('timeDisplay');
 const timeLabel = document.getElementById('timeLabel');
@@ -78,20 +77,6 @@ const CONFIG = {
 };
 
 // === 텍스트 오버레이 표시/숨김 ===
-function showTextOverlay(show = false) {
-  if (show) {
-    if (!textOverlay.querySelector('img')) {
-      const img = document.createElement('img');
-      img.src = CONFIG.textOverlayPath;
-      img.style.maxWidth = CONFIG.textOverlayMaxWidth;
-      img.style.maxHeight = CONFIG.textOverlayMaxHeight;
-      textOverlay.appendChild(img);
-    }
-    textOverlay.classList.add('show');
-  } else {
-    textOverlay.classList.remove('show');
-  }
-}
 
 // === 시간 오버레이 표시/숨김 ===
 function showTimeOverlay(show = false) {
