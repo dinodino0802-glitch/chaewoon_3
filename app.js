@@ -29,9 +29,7 @@ const CONFIG = {
   // === 레터박스 색상 설정 ===
   letterboxColor: '#1a1a1a',             // 비디오 배경색 (검정: #000, 회색: #333, #666 등)
   
-  // === 텍스트 오버레이 크기 설정 ===
-  textOverlayMaxWidth: '100%',           // 텍스트 PNG 최대 너비 (90% = 축소, 100% = 원본, 110% = 확대)
-  textOverlayMaxHeight: '100%',          // 텍스트 PNG 최대 높이
+         // 텍스트 PNG 최대 높이
   
   // === VHS 필터 전역 설정 ===
   vhsEnabled: false,                     // VHS 필터 전체 활성화/비활성화
